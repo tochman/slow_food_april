@@ -13,6 +13,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'cartify', github: 'CraftAcademy/cartify', branch: 'rails_5_2'
+
 
 group :development, :test do
   gem 'pry-byebug'
@@ -22,6 +24,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+  gem 'launchy'
+  gem 'capybara', '~> 2.18'
 end
 
 group :development do

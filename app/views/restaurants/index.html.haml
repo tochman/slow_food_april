@@ -3,4 +3,6 @@
   Kungsgatan 10, 100 00 Stockholm
 
 - @products.each do |product|
-  %h1= product.name
+  %div{id: "product-#{product.id}"}
+    %h1= product.name
+    %span= add_to_cart(product, 1, 'Order')
