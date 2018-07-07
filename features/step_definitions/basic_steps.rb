@@ -2,7 +2,6 @@ Then("show me the page in browser") do
   save_and_open_page
 end
 
-
 Given("I visit the application") do
   visit root_path
 end

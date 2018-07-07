@@ -5,4 +5,5 @@
 - @products.each do |product|
   %div{id: "product-#{product.id}"}
     %h1= product.name
-    %span= add_to_cart(product, 1, 'Order')
+    = image_tag image_for(product)
+    %div= add_to_cart(product, 1, 'Order')

@@ -3,10 +3,13 @@ Then("I should see {string}") do |expected_content|
 end
 
 Then("an order should be created") do
-  order = Cartify::Order.last
-  expect(order).not_to be nil
+  expect(Cartify::Order.count).to eq 1
 end
 
-Then("I should see {string} in my order") do |string|
-  expect(page).to have_content "#{string} item"
+Then("I should see {string} in my order") do |order_items_text|
+  expect(page).to have_content order_items_text
+end
+
+Then("stop") do
+  binding.pry
 end

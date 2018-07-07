@@ -10,10 +10,11 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
+gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'cartify', github: 'CraftAcademy/cartify', branch: 'rails_5_2'
+gem 'cartify', github: 'CraftAcademy/cartify', branch: 'master'
 
 
 group :development, :test do
@@ -26,6 +27,8 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'capybara', '~> 2.18'
+  gem 'chromedriver-helper', '~> 1.2'
+  gem 'selenium-webdriver', '~> 3.12'
 end
 
 group :development do
