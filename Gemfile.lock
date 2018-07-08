@@ -1,9 +1,10 @@
 GIT
   remote: https://github.com/CraftAcademy/cartify.git
-  revision: 176086171e9cd53242e8b21d5bd1a5145ba13576
+  revision: 8c30f41e2a1bab77199beeedeb6c3a2b4e19cf10
   branch: master
   specs:
-    cartify (0.1.4.0.pre.custom)
+    cartify (0.1.6.0.pre.custom)
+      bootstrap
       country_select (~> 3.1)
       devise (~> 4.3)
       draper (~> 3.0)
@@ -11,6 +12,7 @@ GIT
       jquery-rails (~> 4.3, >= 4.3.1)
       jquery_mask_rails (~> 0.1)
       rails (~> 5.1, >= 5.2)
+      tippy_rails
       virtus (~> 1.0, >= 1.0.5)
       wicked (~> 1.3, >= 1.3.2)
 
@@ -67,6 +69,8 @@ GEM
     archive-zip (0.11.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
+    autoprefixer-rails (8.6.5)
+      execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -76,6 +80,10 @@ GEM
     bindex (0.5.0)
     bootsnap (1.3.0)
       msgpack (~> 1.0)
+    bootstrap (4.1.1)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     builder (3.2.3)
     byebug (10.0.2)
     capybara (2.18.0)
@@ -215,6 +223,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     pg (1.0.0)
+    popper_js (1.12.9)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -318,6 +327,7 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
+    tippy_rails (2.5.2)
     turbolinks (5.1.1)
       turbolinks-source (~> 5.1)
     turbolinks-source (5.1.0)
@@ -357,6 +367,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   cucumber-rails
   database_cleaner
+  devise
   factory_bot_rails
   haml-rails (~> 1.0)
   jbuilder (~> 2.5)
